@@ -1,0 +1,39 @@
+.popular {
+    width: 20%;
+    padding: .8rem;
+    border-radius: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: var(--transition);
+    margin: 2rem;
+}
+
+.popular img {
+    width: 100%;
+    height: 150px;
+}
+
+.popular:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: var(--transition);
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.price-section button{
+    text-decoration: none;
+    color: black;
+    background-color: var(--onSecondary-color);
+    padding:0 .4rem;
+    border-radius: .3rem;
+    border: none;
+}
+
+.popular-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

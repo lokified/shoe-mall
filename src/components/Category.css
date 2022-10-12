@@ -1,0 +1,8 @@
+.category img {
+    width: 40%;
+}
+
+.categories {
+    display: flex;
+    margin: 2rem;
+}

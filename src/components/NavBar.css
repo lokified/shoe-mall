@@ -1,0 +1,78 @@
+.nav-section {
+    display: flex;
+    height: 6rem;
+    padding: 2rem;
+}
+
+.nav-links-section{
+    margin-left: 10rem;
+}
+
+.nav-logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo a:hover {
+    color: black;
+}
+
+.nav-search input {
+    border-color: var(--onSecondary-color);
+    outline: none;
+    border-radius: .5rem;
+    padding: .3rem;
+    width: 80%;
+}
+
+.nav-search button {
+    border: none;
+    margin-left: .5rem;
+    background-color: var(--onSecondary-color);
+    padding: .3rem .7rem;
+    border-radius: .5rem;
+}
+
+.nav-links {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.nav-links ul {
+    display: flex;
+
+}
+
+.nav-links ul li {
+    padding-bottom: .5rem;
+    margin: 0 1.5rem;
+}
+
+.nav-links ul li:hover {
+    border-bottom: 1px solid var(--onSecondary-color);
+    transition: var(--transition);
+}
+
+.nav-links ul a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+    transition: var(--transition);
+}
+
+.nav-links ul a:hover {
+    color: var(--onSecondary-color);
+    transition: var(--transition);
+
+}
+
+.nav-user-links {
+    display: flex;  
+}
+
+.account, .cart {
+    background-color: var(--onPrimary-color);
+    padding:0 .2rem;
+    margin:0 1rem ;
+}
