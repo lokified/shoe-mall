@@ -1,10 +1,16 @@
 import React from "react";
 import "./Category.css"
 
-function Category({categoryName}) {
+function Category({ categoryName, filterCategories }) {
+
+  
   return (
     <>
-      <div className="text-center category">
+      <div
+        className="text-center category"
+        onClick={() => filterCategories(categoryName)}
+        style={{cursor: "pointer"}}
+      >
         <img src="./images/wallet.svg" />
 
         <p>{categoryName}</p>

@@ -1,78 +1,182 @@
-.nav-section {
-    display: flex;
-    height: 6rem;
-    padding: 2rem;
+nav {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: 9rem;
 }
 
-.nav-links-section{
-    margin-left: 10rem;
+.nav-section {
+  display: flex;
+  height: 6rem;
+  padding: 2rem;
+}
+
+.nav-links-section {
+  margin-left: 10rem;
+  width: 100%;
 }
 
 .nav-logo a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-logo a:hover {
-    color: black;
+  color: black;
 }
 
 .nav-search input {
-    border-color: var(--onSecondary-color);
-    outline: none;
-    border-radius: .5rem;
-    padding: .3rem;
-    width: 80%;
+  border-color: var(--onSecondary-color);
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  width: 50%;
 }
 
 .nav-search button {
-    border: none;
-    margin-left: .5rem;
-    background-color: var(--onSecondary-color);
-    padding: .3rem .7rem;
-    border-radius: .5rem;
+  border: none;
+  margin-left: 0.5rem;
+  background-color: var(--onSecondary-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
 }
 
 .nav-links {
-    display: flex;
-    margin-top: 1rem;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
 }
 
 .nav-links ul {
-    display: flex;
-
+  display: flex;
 }
 
 .nav-links ul li {
-    padding-bottom: .5rem;
-    margin: 0 1.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0 1.5rem;
 }
 
 .nav-links ul li:hover {
-    border-bottom: 1px solid var(--onSecondary-color);
-    transition: var(--transition);
+  border-bottom: 1px solid var(--onSecondary-color);
+  transition: var(--transition);
 }
 
 .nav-links ul a {
-    text-decoration: none;
-    color: black;
-    margin: 1rem;
-    transition: var(--transition);
+  text-decoration: none;
+  color: black;
+  margin: 1rem;
+  transition: var(--transition);
 }
 
 .nav-links ul a:hover {
-    color: var(--onSecondary-color);
-    transition: var(--transition);
-
+  color: var(--onSecondary-color);
+  transition: var(--transition);
 }
 
 .nav-user-links {
-    display: flex;  
+  display: flex;
+  justify-content: space-between;
 }
 
-.account, .cart {
-    background-color: var(--onPrimary-color);
-    padding:0 .2rem;
-    margin:0 1rem ;
+.account {
+  padding: 0 0.2rem;
+  margin: 0 2rem;
+  background-color: "#f5f2eb";
+  cursor: pointer;
+}
+
+.cart {
+  cursor: pointer;
+}
+
+.cart span:nth-child(1) {
+  font-size: 1.5rem;
+  color: var(--onSecondary-color);
+}
+
+.cart span:nth-child(2) {
+  padding: 0 2px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  font-size: 0.8rem;
+}
+
+.drop-btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    height: 6rem;
+  }
+
+  .nav-logo a {
+    font-size: 1rem;
+  }
+
+  .nav-links ul {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    z-index: 10;
+    background-color: white;
+    display: none;
+  }
+
+  .drop-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--cl-white);
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-user-links {
+    position: absolute;
+    right: 0;
+  }
+
+  .nav-search {
+    display: none;
+  }
+
+  .links li a {
+    width: 100%;
+    height: 5rem;
+  }
+
+  .links.active {
+    background: white;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    display: block;
+    transition: var(--transition);
+    animation: animateLinks 1s ease-in-out;
+  }
+
+  .links.active li {
+    margin-top: 1rem;
+  }
+
+  .links.active li a:hover {
+    color: var(--onSecondary-color);
+  }
+
+  @keyframes animateLinks {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .account {
+    padding: 0 0.2rem;
+    margin: 0 1rem;
+  }
 }

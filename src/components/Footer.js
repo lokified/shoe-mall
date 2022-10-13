@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-function Footer(props) {
+function Footer() {
   return (
     <>
       <footer>
@@ -76,8 +76,11 @@ function Footer(props) {
               <p>Check your balance</p>
             </div>
           </div>
+
           <div className="socials-footer">
-            <p>2022. All rights reserved</p>
+            <div>
+              <p>2022. All rights reserved</p>
+            </div>
 
             <div className="socials">
               <img src="./images/facebook.svg" />

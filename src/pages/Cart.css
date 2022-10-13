@@ -1,0 +1,45 @@
+
+.checkout-section {
+  background-color: var(--onSecondary-color);
+  padding: 2rem;
+  border-radius: .3rem;
+  margin-top: 2rem;
+}
+
+.total , .checkout{
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-1 {
+  display: flex;
+  text-align: center;
+}
+
+.total-1 img {
+  width: 10%;
+}
+
+.total-1 p {
+  margin-left: 1rem;
+}
+.total-2 span{
+  margin: 0 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.checkout {
+  margin: 5rem 0 0 0;
+}
+
+.checkout a {
+  color: "#f5f2eb";
+  cursor: pointer;
+}
+
+.checkout button {
+  border: none;
+  border-radius: .3rem;
+  padding: .3rem .5rem;
+}

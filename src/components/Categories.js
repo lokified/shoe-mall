@@ -1,25 +1,34 @@
-import React from 'react';
-import Category from './Category';
+import React from "react";
+import Category from "./Category";
 import "./Category.css";
 
-function Categories() {
-    return (
-      <>
-        <div className="categories">
-          <Category categoryName="Sport Shoes" />
+function Categories({ filterCategories }) {
+  return (
+    <>
+      <div className="categories">
+        <Category
+          categoryName="Sport Shoes"
+          filterCategories={filterCategories}
+        />
 
-          <Category categoryName="boots" />
+        <Category categoryName="boots" filterCategories={filterCategories} />
 
-          <Category categoryName="sandals" />
+        <Category categoryName="sandals" filterCategories={filterCategories} />
 
-          <Category categoryName="ladies" />
+        <Category categoryName="ladies" filterCategories={filterCategories} />
 
-          <Category categoryName="stilletos" />
+        <Category
+          categoryName="stilletos"
+          filterCategories={filterCategories}
+        />
 
-          <Category categoryName="Red Bottoms" />
-        </div>
-      </>
-    );
+        <Category
+          categoryName="Red Bottoms"
+          filterCategories={filterCategories}
+        />
+      </div>
+    </>
+  );
 }
 
 export default Categories;
