@@ -24,7 +24,8 @@ nav {
   color: black;
 }
 
-.nav-search input {
+.nav-search input,
+.nav-search-mobile input {
   border-color: var(--onSecondary-color);
   outline: none;
   border-radius: 0.5rem;
@@ -32,7 +33,8 @@ nav {
   width: 50%;
 }
 
-.nav-search button {
+.nav-search button,
+.nav-search-mobile button {
   border: none;
   margin-left: 0.5rem;
   background-color: var(--onSecondary-color);
@@ -89,7 +91,7 @@ nav {
 }
 
 .cart span:nth-child(1) {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--onSecondary-color);
 }
 
@@ -104,7 +106,11 @@ nav {
 }
 
 .drop-btn {
-    display: none;
+  display: none;
+}
+
+.fa-search {
+  display: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -119,7 +125,7 @@ nav {
   .nav-links ul {
     position: absolute;
     left: 0;
-    top: 8rem;
+    top: 6rem;
     z-index: 10;
     background-color: white;
     display: none;
@@ -146,10 +152,11 @@ nav {
   .links li a {
     width: 100%;
     height: 5rem;
+    color: aliceblue;
   }
 
   .links.active {
-    background: white;
+    background: rgb(179, 40, 40);
     width: 50%;
     height: 100%;
     left: 0;
@@ -178,5 +185,20 @@ nav {
   .account {
     padding: 0 0.2rem;
     margin: 0 1rem;
+    background-color: azure;
+  }
+
+  .fa-search {
+    display: block;
+    background-color: azure;
+  }
+
+  .nav-search-mobile {
+    background-color: azure;
+  }
+
+  .nav-search-mobile input {
+    width: 60%;
+    margin: 0.8rem 1rem;
   }
 }

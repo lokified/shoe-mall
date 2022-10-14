@@ -27,9 +27,13 @@ function Cart({ cart, setCart, handleChange }) {
   return (
     <>
       <section>
-        <div className="container" style={{ width: "60%", marginTop: "5rem" }}>
+        <div
+          style={{ width: "70%", marginTop: "5rem" }}
+          className="container cart-items-section"
+        >
           {cart.map((item) => (
             <CartItem
+            key={item.id}
               item={item}
               handleChange={handleChange}
               handleRemove={handleRemove}
@@ -42,7 +46,7 @@ function Cart({ cart, setCart, handleChange }) {
                 <p>7 days return policy</p>
               </div>
               <div className="total-2">
-                <span>Total</span>
+                <span>Total</span> <br />
                 <span>ksh {price}</span>
               </div>
             </div>

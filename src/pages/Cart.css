@@ -1,12 +1,12 @@
-
 .checkout-section {
   background-color: var(--onSecondary-color);
   padding: 2rem;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   margin-top: 2rem;
 }
 
-.total , .checkout{
+.total,
+.checkout {
   display: flex;
   justify-content: space-between;
 }
@@ -23,7 +23,7 @@
 .total-1 p {
   margin-left: 1rem;
 }
-.total-2 span{
+.total-2 span {
   margin: 0 1rem;
   font-weight: bold;
   font-size: 1.5rem;
@@ -40,6 +40,34 @@
 
 .checkout button {
   border: none;
-  border-radius: .3rem;
-  padding: .3rem .5rem;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cart-items-section {
+    width: 80%;
+  }
+
+
+  .total,.checkout {
+
+    flex-wrap: wrap;
+  }
+  
+
+  .total div {
+    margin: 1rem 0;
+  }
+
+  .checkout a {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .total,
+  .checkout {
+    justify-content: center;
+  }
 }

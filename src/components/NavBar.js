@@ -11,6 +11,8 @@ function NavBar({
   sethideSearchItem,
 }) {
   const [click, setClick] = useState(false);
+  const [hideSearch, setHideSearch] = useState(false);
+  const handleHideSearch = () => setHideSearch(!hideSearch);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -79,6 +81,17 @@ function NavBar({
               </ul>
 
               <div className="nav-user-links">
+                <div>
+                  <i
+                    onClick={handleHideSearch}
+                    style={{
+                      margin: ".4rem",
+                      fontSize: "1.4rem",
+                    }}
+                    class="fa fa-search"
+                    aria-hidden="true"
+                  ></i>
+                </div>
                 <div className="cart">
                   <span>
                     <Link
@@ -94,14 +107,30 @@ function NavBar({
                   <span>{size}</span>
                 </div>
 
-                <div className="account">
-                  Account
-                </div>
+                <div className="account">Account</div>
               </div>
             </div>
           </div>
         </div>
       </nav>
+      {hideSearch && (
+        <div className="container nav-search-mobile">
+          <input
+            type="text"
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+            }}
+          />
+          <button
+            onClick={() => {
+              handleSearchClicked();
+              setisClicked(true);
+            }}
+          >
+            Search
+          </button>
+        </div>
+      )}
     </>
   );
 }

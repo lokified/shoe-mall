@@ -2,6 +2,10 @@
     padding-top: 5rem;
 }
 
+.mySwiper {
+  z-index: -1;
+}
+
 .swiper {
   width: 100%;
   height: 300px;

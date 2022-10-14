@@ -1,7 +1,7 @@
 import React from "react";
 import "./Category.css"
 
-function Category({ categoryName, filterCategories }) {
+function Category({ image, categoryName, filterCategories }) {
 
   
   return (
@@ -11,7 +11,7 @@ function Category({ categoryName, filterCategories }) {
         onClick={() => filterCategories(categoryName)}
         style={{cursor: "pointer"}}
       >
-        <img src="./images/wallet.svg" />
+        <img src={image} />
 
         <p>{categoryName}</p>
       </div>

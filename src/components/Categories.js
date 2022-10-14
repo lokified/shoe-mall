@@ -6,24 +6,24 @@ function Categories({ filterCategories }) {
   return (
     <>
       <div className="categories">
-        <Category
+        <Category image="./images/sport-cat.jpg"
           categoryName="Sport Shoes"
           filterCategories={filterCategories}
         />
 
-        <Category categoryName="boots" filterCategories={filterCategories} />
+        <Category image="./images/boot-cat.jpg" categoryName="boots" filterCategories={filterCategories} />
 
-        <Category categoryName="sandals" filterCategories={filterCategories} />
+        <Category image="./images/sandal-cat.jpg" categoryName="sandals" filterCategories={filterCategories} />
 
-        <Category categoryName="ladies" filterCategories={filterCategories} />
+        <Category image="./images/ladies-cat.jpg" categoryName="ladies" filterCategories={filterCategories} />
 
-        <Category
+        <Category image="./images/stilleto-cat.jpg"
           categoryName="stilletos"
           filterCategories={filterCategories}
         />
 
-        <Category
-          categoryName="Red Bottoms"
+        <Category image="./images/work.jpeg"
+          categoryName="Work Boots"
           filterCategories={filterCategories}
         />
       </div>
