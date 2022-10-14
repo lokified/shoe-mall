@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/shoe-mall/static/css/main.1cd258c3.css",
+    "main.js": "/shoe-mall/static/js/main.156247e6.js",
+    "static/js/787.629ecfbd.chunk.js": "/shoe-mall/static/js/787.629ecfbd.chunk.js",
+    "index.html": "/shoe-mall/index.html",
+    "main.1cd258c3.css.map": "/shoe-mall/static/css/main.1cd258c3.css.map",
+    "main.156247e6.js.map": "/shoe-mall/static/js/main.156247e6.js.map",
+    "787.629ecfbd.chunk.js.map": "/shoe-mall/static/js/787.629ecfbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1cd258c3.css",
+    "static/js/main.156247e6.js"
+  ]
+}
